@@ -1,6 +1,7 @@
 # DataTransfer
 Data tranfer task
 
+```
 Preparations
 Basically that is all prepartions that I have done now to transfer data
 I created both databases with the same table structure.
@@ -23,3 +24,4 @@ Possible perfection: With a dblink it is possible to easily automate this proces
 Validation
 I compare the number of rows in the recommendations table in both source_db and target_db
 During the transfer, I log each batch number and how many rows were inserted.This helps to track progress and identify if any batch failed. If a batch fails, I catch the error, print the batch number and offset, and can restart the process from that point. Another option is to add a hash for each batch and check it.
+```
